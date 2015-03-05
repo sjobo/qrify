@@ -16,5 +16,3 @@ function displayURL(tabs)
 }
 
 document.addEventListener('DOMContentLoaded', function(){getURL();});
-chrome.browserAction.setBadgeText({text:"beta"});
-chrome.browserAction.setBadgeBackgroundColor({color:"#000000"});

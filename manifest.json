@@ -1,18 +1,20 @@
 {
 		"manifest_version": 2,
-		"name": "qrify",
-		"version": "1.0",
+		"name": "sleeqr",
+		"version": "1.0.1",
 		//"default_locale": "en",
 		"description": "makes a qr code of the url of the current website you are visiting.",
 		"icons": {
-			"19": "images/qrify19.png",
-			"32": "images/qrify32.png",
-			"48": "images/qrify48.png",
-			"128": "images/qrify128.png"},
+			"16": "images/sleeqr16.png",
+			"19": "images/sleeqr19.png",
+			"32": "images/sleeqr32.png",
+			"48": "images/sleeqr48.png",
+			"128": "images/sleeqr128.png"},
 		"browser_action":{
-			"default_title": "qrify extension",
+			"default_title": "sleeqr extension",
 			"default_popup": "html/popup.html"},
-		"permissions": ["activeTab", "tabs"],
+		"permissions": ["activeTab", "contextMenus"],
+		//"background": {"scripts": ["js/background.js"]},
 		"commands": {
 			"_execute_browser_action":{
 				"suggested_key": {
