@@ -1,0 +1,21 @@
+{
+		"manifest_version": 2,
+		"name": "qrify",
+		"version": "1.0",
+		//"default_locale": "en",
+		"description": "makes a qr code of the url of the current website you are visiting.",
+		"icons": {
+			"19": "images/qrify19.png",
+			"32": "images/qrify32.png",
+			"48": "images/qrify48.png",
+			"128": "images/qrify128.png"},
+		"browser_action":{
+			"default_title": "qrify extension",
+			"default_popup": "html/popup.html"},
+		"permissions": ["activeTab", "tabs"],
+		"commands": {
+			"_execute_browser_action":{
+				"suggested_key": {
+					"default": "Ctrl+Q"},
+				"description": "create qr code with keyboard shortcut ctrl+q"}}
+}
