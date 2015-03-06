@@ -1,6 +1,6 @@
-# qrify
-qrify plugin for chrome
+# sleeqr
+[sleeqr plugin for chrome homepage](https://sjobo.github.com/sleeqr)
 
-qrify uses qrcode.js developed by shim sangmin (https://davidshimjs.github.io/qrcodejs/) under MIT license. 
+sleeqr uses qrcode.js developed by shim sangmin (https://davidshimjs.github.io/qrcodejs/) under MIT license. 
 
-qrify uses jquery developed by the jquery foundation (www.jquery.com) under MIT license.
+sleeqr uses jquery developed by the jquery foundation (www.jquery.com) under MIT license.
