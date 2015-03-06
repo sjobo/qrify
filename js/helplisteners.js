@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded', function(){displayURL("homepage");});
+document.addEventListener('DOMContentLoaded', function(){displayURL("http://sjobo.github.com/sleeqr");});
