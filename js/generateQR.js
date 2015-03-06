@@ -1,10 +1,13 @@
 function getURL(){
-chrome.tabs.query({currentWindow: true, active: true}, function(tabs){displayURL(tabs);});
+chrome.tabs.query({currentWindow: true, active: true}, function(tabs){displayURL(tabs[0].url);});
 }
 
-function displayURL(tabs)
+function displayURL(url)
 {
-	var current_url = tabs[0].url;
+	if (url == "homepage"){
+		var current_url = "http://sjobo.github.com/sleeqr";}
+	else{
+		var current_url = url;}
 	var qrcode = new QRCode("qrcode", {
     text: current_url,
     width: 250,
@@ -14,5 +17,3 @@ function displayURL(tabs)
     correctLevel : QRCode.CorrectLevel.H
 	});
 }
-
-document.addEventListener('DOMContentLoaded', function(){getURL();});
