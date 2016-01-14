@@ -1,9 +1,9 @@
 {
 		"manifest_version": 2,
 		"name": "sleeqr",
-		"version": "2.0",
+		"version": "2.1",
 		"author": "Sjoerd Bosma",
-		"description": "makes a qr code of the url of the current website you are visiting.",
+		"description": "makes a qr code of the url of the current website you are visiting, with the aim of visiting / sharing the website on your smartphone.",
 		"icons": {
 			"16": "images/sleeqr16.png",
 			"19": "images/sleeqr19.png",
@@ -14,11 +14,10 @@
 		"browser_action":{
 			"default_title": "sleeqr extension",
 			"default_popup": "html/popup.html"},
-		//sleeqr needs permissions for the current URL ->activeTab
 		"permissions": ["activeTab"],
 		"commands": {
 			"_execute_browser_action":{
 				"suggested_key": {
 					"default": "Ctrl+Q"},
-				"description": "create qr code with keyboard shortcut ctrl+q"}}
+				"description": "launch sleeqr with keyboard shortcut ctrl+q"}}
 }

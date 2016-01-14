@@ -14,14 +14,20 @@ function displayURL(url, shareService, recipient)
 	case 'email':
 		actionURL = "mailto:"+recipient+"?body="+url;
 		break;
+	case 'telegram':
+		actionURL = "tg://msg?text="+url+"&to="+recipient;
+		break;
 	case 'sms':
 		actionURL = "sms:"+recipient+"?body="+url;
+		break;
+	case 'twitter':
+		actionURL = "twitter://post?message="+url;
 		break;
 	default:
 		actionURL = url;
 		}
 	qrcode = new QRCode("qrcode", {
-    text: actionURL,
+    text: encodeURI(actionURL),
     width: 250,
     height: 250,
     colorDark : "#000000",

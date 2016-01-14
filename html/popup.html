@@ -11,14 +11,32 @@
 	<div id="qrcode"></div>
 	<div id="share"><a href="#">share</a></div>
 	<div id="shareOptions">
-		<input type="text" placeholder="email addr or phone no" id="recipient"> <br>
-		<a id="email" href="#">email</a><br>
-		<a id="sms" href="#">sms</a>*<br>
-		<a id="whatsapp" href="#">whatsapp</a><br>
-	<a id="browser" href="#">browser</a> (default)<br>
-	<small>*may incur additional fees</small></div>
-	
-	
+<table width="250px" border="0">
+<tr>
+<td colspan="2"><input type="text" placeholder="email address, phone number or name" id="recipient" size="28">
+</tr>
+
+<tr>
+<td><a class="sharebtn" id="browser" href="#" title="Open in webbrowser (default)"><img src="../images/logos/chrome.png" width="63px"><img src="../images/logos/firefox.png" width="62px"><br><img src="../images/logos/opera.svg" width="63px"><img src="../images/logos/ie.svg" width="62px"></a></td>
+<td><a class="sharebtn" id="telegram" href="#"><img src="../images/logos/telegram.png" width="125px" title="Send via Telegram"></a></td>
+</tr>
+
+<tr>
+<td><a class="sharebtn" id="whatsapp" href="#"><img src="../images/logos/whatsapp.png" width="125px" title="Send via WhatsApp"></a></td>
+<td><a class="sharebtn" id="email" href="#"><img src="../images/logos/email.png" width="125px" title="Send via email"></a></td>
+</tr>
+
+<tr>
+<td><a class="sharebtn" id="twitter" href="#"><img src="../images/logos/twitter.png" width="125px" title="Post on Twitter"></a></td>
+</tr>
+
+<!--<tr>
+<td><a id="sms" href="#">sms</a>*<br><small>*may incur additional fees</small>
+</tr>-->
+</table>
+</div>
+
+
 	<div class="popup_link"><a href="help.html">i need help</a></div>
 	</div>
 	</body>

@@ -7,6 +7,9 @@ div#qrcode{
 
 .popup_link{
 	text-align:right;}
-	
+
 div#shareOptions{
 	display:none;}
+
+div#share{
+	font-size:200%;}
